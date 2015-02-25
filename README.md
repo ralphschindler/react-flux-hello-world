@@ -16,4 +16,4 @@ Build/Deploy technologies:
 The only goal here is to mash a bunch of well respected components
 into the Flux and React way of doing things.
 
-Demo: [ http://ralphschindler.github.io/react-flux-hello-world/](http://http://ralphschindler.github.io/react-flux-hello-world/)
+Demo: [ http://ralphschindler.github.io/react-flux-hello-world/](http://ralphschindler.github.io/react-flux-hello-world/)
