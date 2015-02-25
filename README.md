@@ -14,6 +14,7 @@ Build/Deploy technologies:
 - babelify (ES6 transformer)
 
 The only goal here is to mash a bunch of well respected components
-into the Flux and React way of doing things.
+into the Flux and React way of doing things; and in a best practices
+sort of way.
 
 Demo: [ http://ralphschindler.github.io/react-flux-hello-world/](http://ralphschindler.github.io/react-flux-hello-world/)
