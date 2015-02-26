@@ -5,7 +5,7 @@ var AppDispatcher = require('../dispatcher/AppDispatcher');
 var Constants = require('../constant/Constants');
 var CHANGE_EVENT = 'change';
 
-var names = ['ralph', 'nick', 'josh', 'dennis', 'joe', 'george'];
+var names = ['ralph', 'nick', 'josh', 'dennis', 'joe', 'george', 'pedram'];
 var index = 0;
 
 var NameStore = assign({}, EventEmitter.prototype, {
