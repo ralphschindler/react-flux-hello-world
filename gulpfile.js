@@ -15,7 +15,7 @@ gulp.task('build', function() {
       transform: [reactify, babelify],
       debug: true
     }))
-    .pipe(transform(function () { return exorcist('dist/bundle.js.map'); }))
+    .pipe(transform(function () { return exorcist('dist/js/bundle.js.map'); }))
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('dist/js/'));
   gulp.src(['index.html'])

@@ -1,30 +1,24 @@
 var React = require('react');
-
-var HelloActions = require('../action/HelloActions');
-
+var NameActionCreators = require('../action/NameActionCreators');
 var NameStore = require('../store/NameStore');
-
-function getCurrentName() {
-  return {
-    name: NameStore.getCurrentName()
-  }
-}
 
 var Hello = React.createClass({
 
   getInitialState: function() {
-    return getCurrentName()
+    return {
+      name: NameStore.getCurrentName()
+    }
   },
 
   componentDidMount: function() {
     NameStore.addChangeListener(this._onChange);
   },
+
   componentWillUnmount: function() {
     NameStore.removeChangeListener(this._onChange);
   },
 
   render: function () {
-    console.log('rendering');
     return (
       <div>
         Hello {this.state.name}
@@ -36,14 +30,13 @@ var Hello = React.createClass({
   },
 
   _onRefreshNameClick: function() {
-    HelloActions.refreshName();
+    NameActionCreators.refreshName();
   },
 
-  _onChange: function(/*object*/ event) {
-    this.setState(getCurrentName());
+  _onChange: function(event) {
+    this.setState({name: NameStore.getCurrentName()});
   }
+
 });
-
-
 
 module.exports = Hello;
